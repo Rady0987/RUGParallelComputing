@@ -1,0 +1,13 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/c/Users/rady0/Desktop/LINUX/Documents/Parallel Computing/2022/Week6'
+mkdir -p obj
+mpicc -c -o obj/hashtable.o hashtable.c -Wall -Wextra -pthread -O2
+mkdir -p obj
+mpicc -c -o obj/linkedlist.o linkedlist.c -Wall -Wextra -pthread -O2
+mkdir -p obj
+mpicc -c -o obj/pw_helpers.o pw_helpers.c -Wall -Wextra -pthread -O2
+mkdir -p obj
+mpicc -c -o obj/stringlist.o stringlist.c -Wall -Wextra -pthread -O2
+mpicc -o guessword obj/hashtable.o obj/linkedlist.o obj/pw_helpers.o obj/stringlist.o guessword.c -Wall -Wextra -pthread -O2 -lcrypt -lpthread
+make: Leaving directory '/mnt/c/Users/rady0/Desktop/LINUX/Documents/Parallel Computing/2022/Week6'
+ 

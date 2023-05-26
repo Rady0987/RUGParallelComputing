@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/c/Users/rady0/Desktop/LINUX/Documents/Parallel Computing/2022/Week5'
+gcc -O2 -fopenmp execute.c binaryTree.c -o binaryTree -lm
+gcc -O2 -fopenmp execute.c rbTree.c -o rbTree -lm
+make: Leaving directory '/mnt/c/Users/rady0/Desktop/LINUX/Documents/Parallel Computing/2022/Week5'
+ 
